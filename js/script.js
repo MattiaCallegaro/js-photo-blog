@@ -14,8 +14,11 @@ axios.get(endpoint).then((resp) =>{
     console.log(resp.data)
 //dichiaro che card è uguale al contenuto di axios
     const card = resp.data;
-
+// mi creo un ciclo for per ciclare il contenuto di cardBox e incrementare 
     for (let i = 0; i < card.length; i++){
+        //inserisco tutto il mio html scritto in precedenza 
+        //al posto del testo, titolo e immagine, vado ad inserire le key
+        //per fare in modo che mi vengano visualizzate l'informazioni dell'API (array di oggetti con le loro key) all'interno di innerHTML
         let cardBox =
         `<div class="col-md-6 col-lg-4">
                 <div class="card p-3">
