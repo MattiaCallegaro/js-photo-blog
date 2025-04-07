@@ -21,13 +21,14 @@ axios.get(endpoint).then((resp) =>{
                 <div class="card p-3">
                     <img class="pin " src="./img/microsopic-of-red-blood-cells-flowing-through-the-blood-vessels-medical-and-science-research-concept-generative-ai-png.webp"
                         alt="">
-                    <img src="${card.url}" class="card-img-top  " alt="...">
+                    <img src="${card[i].url}" class="card-img-top  " alt="...">
                     <div class="card-body">
-                        <p id="title" class="card-text">${card.title}</p>
-                        <p id="date" class="card-date">${card.date}</p>
+                        <p id="title" class="card-text">${card[i].title}</p>
+                        <p id="date" class="card-date">${card[i].date}</p>
                     </div>
                 </div>
             </div>` 
+            //uso innerHTML per "stampare" in pagina card box con tutti i suoi dati
             cardNumber.innerHTML += cardBox;
     }
 
