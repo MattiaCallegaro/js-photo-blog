@@ -34,23 +34,51 @@ body {
 
 }
 
-@media screen and (min-width: 768px){
+/* Overlay */
+
+#overlay {
+    /* fixed do un ordine a overlay */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.765);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* `z-index indico la posizione rispetto agli altri elementi */
+    z-index: 9999;
+
+}
+
+#overlay-btn{
+    position: fixed;
+    top: 254px;
+    right: 448px;
+}
+
+
+
+@media screen and (min-width: 768px) {
     .pin {
         right: 120px;
     }
 
-    
+
 }
-@media screen and (min-width: 992px){
+
+@media screen and (min-width: 992px) {
     .pin {
         right: 106px;
         top: -39px;
     }
-    
+
 }
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width: 1200px) {
     .pin {
         right: 146px;
     }
-    
+
 }

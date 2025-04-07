@@ -36,7 +36,7 @@ https://cdn.jsdelivr.net/npm/axios@1.8.4/dist/axios.min.js
     <!-- mi sono creato 6 card con immagine 600x600 dentro, ho messo del testo sotto e le date con diversi font
  alla riga ho dato un margin top e bottom per staccarmi dal titolo e dal piè di pagina, poi un gap verticale per tutte le card
  in modo che sono staccate . Ad ogni colonna ho dato md-6 (tablet) per fare in modo che in md stiano 2 a 2 e con lg-4(desktop) per fare in modo che stiano 3 a 3. Ad ogni card ho dato del paddig generale per far in modo di "staccare l'immagine dal bordo"-->
- <!-- Àggiunto pin img in position absolute sopra le card -->
+    <!-- Àggiunto pin img in position absolute sopra le card -->
     <div class="container">
         <div class="row  mt-5 mb-5 gy-5 " id="card-number">
             <!-- <div class="col-md-6 col-lg-4">
@@ -106,16 +106,15 @@ https://cdn.jsdelivr.net/npm/axios@1.8.4/dist/axios.min.js
                         <p class="card-date">06-08-2024</p>
                     </div>
                 </div>
-            </div> -->
+            </div> --> 
         </div>
-    </div>
-
-
-
-
-
-    <!-- Ìnserisco il link per il mio javascript -->
-    <script src="./js/script.js"></script>
+        <div id="overlay" class="">
+            <img id="overlay-img" src="./img/600x600-1.jpg" alt="">
+            <button id="overlay-btn" class="">Chiudi</button>
+        </div>
+    
+        <!-- Ìnserisco il link per il mio javascript -->
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
