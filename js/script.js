@@ -45,3 +45,7 @@ const overlayCloseBtn = document.getElementById("overlay-btn")
 overlayCloseBtn.addEventListener("click",()=>{
     overlay.classList.add("d-none")
 })
+
+cardNumber.addEventListener("click",()=>{
+    
+})
