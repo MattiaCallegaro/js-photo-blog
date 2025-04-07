@@ -2,6 +2,10 @@
 //variabile endpoint chiamata axios
 const endpoint = "https://lanciweb.github.io/demo/api/pictures/";
 
+//mi recupero card-number dal dom
+let cardNumber = document.getElementById("card-number")
+
+
 //chiamata axios 
 //nel get devo mettere cosa voglio "chiamare"
 //.then "e dopo" mostro il contenuto a cui ho dato nome resp
@@ -14,7 +18,7 @@ axios.get(endpoint).then((resp) =>{
     for (let i = 0; i < card.length; i++){
         let cardBox =
         `<div class="col-md-6 col-lg-4">
-                <div class="card p-3" id="card-number">
+                <div class="card p-3">
                     <img class="pin " src="./img/microsopic-of-red-blood-cells-flowing-through-the-blood-vessels-medical-and-science-research-concept-generative-ai-png.webp"
                         alt="">
                     <img src="${card.url}" class="card-img-top  " alt="...">
@@ -24,6 +28,7 @@ axios.get(endpoint).then((resp) =>{
                     </div>
                 </div>
             </div>` 
+            cardNumber.innerHTML += cardBox;
     }
 
 })
