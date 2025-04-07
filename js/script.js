@@ -36,3 +36,12 @@ axios.get(endpoint).then((resp) =>{
     }
 
 })
+
+//mi recupero dal dom overlay img e btn
+const overlay = document.getElementById("overlay")
+const overlayImage = document.getElementById("overlay-img")
+const overlayCloseBtn = document.getElementById("overlay-btn")
+//aggiungo l'evento click sul pusante che mi applica d-done al click
+overlayCloseBtn.addEventListener("click",()=>{
+    overlay.classList.add("d-none")
+})
