@@ -1,15 +1,56 @@
-h1{
+h1 {
     font-family: "Edu TAS Beginner", sans-serif;
     font-weight: 900;
     font-size: 50px;
-    
+
 }
 
-.wall-img{
+.card-text {
+    font-family: "Edu TAS Beginner", sans-serif;
+    font-size: 20px;
+}
+
+.card-date {
+    font-family: "Sometype Mono", monospace;
+    font-size: 20px;
+}
+
+.wall-img {
     background-image: url(../img/wall.png);
-    
+    background-size: auto;
 }
 
-body{
+body {
     background-image: url(../img/cork.png);
+}
+
+
+/* `Pin in position absolute per uscire dal flusso della pagina e posizionarlo dove voglio */
+.pin {
+    position: absolute;
+    top: -47px;
+    right: 152px;
+    width: 30%;
+
+}
+
+@media screen and (min-width: 768px){
+    .pin {
+        right: 120px;
+    }
+
+    
+}
+@media screen and (min-width: 992px){
+    .pin {
+        right: 106px;
+        top: -39px;
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    .pin {
+        right: 146px;
+    }
+    
 }
