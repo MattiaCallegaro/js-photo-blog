@@ -6,7 +6,7 @@ const endpoint = "https://lanciweb.github.io/demo/api/pictures/";
 let cardNumber = document.getElementById("card-number")
 
 
-//chiamata axios 
+//chiamata axios dentro un arrow function
 //nel get devo mettere cosa voglio "chiamare"
 //.then "e dopo" mostro il contenuto a cui ho dato nome resp
 axios.get(endpoint).then((resp) =>{
@@ -24,7 +24,7 @@ axios.get(endpoint).then((resp) =>{
                 <div class="card p-3">
                     <img class="pin " src="./img/microsopic-of-red-blood-cells-flowing-through-the-blood-vessels-medical-and-science-research-concept-generative-ai-png.webp"
                         alt="">
-                    <img src="${card[i].url}" class="card-img-top  " alt="...">
+                    <img src="${card[i].url}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p id="title" class="card-text">${card[i].title}</p>
                         <p id="date" class="card-date">${card[i].date}</p>
@@ -46,6 +46,16 @@ overlayCloseBtn.addEventListener("click",()=>{
     overlay.classList.add("d-none")
 })
 
-cardNumber.addEventListener("click",()=>{
-    
+//creo un evento click per far visualizzare l'immagine cliccata
+cardNumber.addEventListener("click",(e)=>{
+//clickImage è uguale al target evento della funzione click
+    const clickImage = e.target
+//.className mi prendo la classe card-img-top
+    if (clickImage.className === ("card-img-top")){
+//se l'immagine di overlayImage è uguale a quella di clickImage
+        overlayImage.src=clickImage.src;
+        //cliccando mi rimuove il d-none
+        overlay.classList.remove("d-none")
+
+    }
 })

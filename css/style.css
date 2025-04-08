@@ -24,6 +24,10 @@ body {
     background-image: url(../img/cork.png);
 }
 
+.card-img-top{
+    cursor: pointer;
+}
+
 
 /* `Pin in position absolute per uscire dal flusso della pagina e posizionarlo dove voglio */
 .pin {
@@ -38,7 +42,7 @@ body {
 
 #overlay {
     /* fixed do un ordine a overlay */
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -47,18 +51,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* `z-index indico la posizione rispetto agli altri elementi */
+    /* z-index indico la posizione rispetto agli altri elementi */
     z-index: 9999;
 
 }
 
 #overlay-btn{
-    position: fixed;
-    top: 246px;
-    right: 450px;
-    font-size: 60px;
-    cursor: pointer;
+    margin-left: 20px;
+    width: 5%;
+    height: 4%;
+    border-radius: 15%;
 }
+
 
 
 
